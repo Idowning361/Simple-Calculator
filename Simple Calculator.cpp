@@ -6,7 +6,7 @@ using namespace std;
 int main(){
     
     double Num1, Num2;
-    string operation;
+    char operation;
 
     cout<<"Welcome to my calculator please input your first number..."<<endl;
         cin>>Num1;
@@ -17,13 +17,21 @@ int main(){
     
     switch (operation)
     {
-    case "*";
+    case '*':
          cout<<Num1 * Num2<<endl;
         break;
-    case "+";
+
+    case '+':
         cout<<Num1+Num2<<endl;
-    
+        break;
+    case '-':
+        cout<<Num1-Num2<<endl;
+        break;
+    case '/':
+        cout<<Num1/Num2<<endl;
+        break;
     default:
+        cout<<"You've entered an invalid operator"<<endl;
         break;
     }
 
